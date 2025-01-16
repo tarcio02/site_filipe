@@ -3,17 +3,18 @@ import { cores } from "../../styles/GlobalStyle";
 
 export const StyleHistoria = styled.div`
     .container{
-        /* display: flex;
-        justify-content: center;
-        flex-direction: column; */
-        align-items: center;
         height: 95vh;
         padding: 16px;
         position: relative;
         z-index: 2;
+        width: 100%;
     }
 
     .texto{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
         text-align: center;
         padding-left: 8px;
         span{
@@ -28,18 +29,33 @@ export const StyleHistoria = styled.div`
             i{
                 font-size: 22px;
                 color: ${cores.vermelho};
+                margin-left: 8px;
             }
         }
         p{
             font-size: 16px;
+            font-weight: 600;
             margin-bottom: 8px;
         }
     }
 
-    img{
-        width: 100%;
+    .border-image{
+        border: solid 1px ${cores.branco};
+        padding: 16px;
+        margin: 16px 0;
         border-radius: 8px;
-        margin-top: 16px
+        .imagem{
+            width: 300px; /* Largura e altura iguais para criar o círculo */
+            height: 300px;
+            overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+            border-radius: 8px;
+            img{
+                width: 330px;
+                height: 330px;
+                object-fit: cover;
+                object-position: bottom;
+            }
+        }
     }
 
     @media (min-width: 768px){

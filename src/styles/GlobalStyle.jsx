@@ -12,13 +12,14 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
         padding: 0;
         box-sizing: border-box;
+        font-family: "Courier New", Courier, monospace;
         color: white;
     }
 
     body{
         font-family: sans-serif;
         position: relative;
-        width: 100%;
+        width: 100vw;
         background-image: url(${fudo});
         background-size: cover;
         background-position: center;
