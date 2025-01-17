@@ -35,7 +35,8 @@ export const TextContainer = styled.div`
             height: 100px; /* Altura fixa para o espaço ser preservado */
             animation: ${fadeIn} 1s 3s forwards; /* Exibe a div após a animação do título */
             padding: 14px 0 8px;
-            border-bottom: 1px solid white;
+            border-bottom: 1px solid #000; /* Cor e espessura da borda inferior */
+            box-shadow: 0 2px 2px rgba(223, 230, 233, 0.8); /* Sombra clara */
 
             p{
                 font-size: 16px;
@@ -77,10 +78,6 @@ export const StyleInicio = styled.div`
         }
     }
     .border-imagem{
-        /* border: 1px solid ${cores.branco};
-        border-radius: 50%;
-        padding: 8px; */
-
         display: inline-block;
          /* Controle o tamanho da borda */
         border-radius: 50%; /* Mantém o contorno arredondado */

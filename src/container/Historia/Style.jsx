@@ -12,23 +12,22 @@ export const StyleHistoria = styled.div`
 
     .texto{
         display: flex;
-        justify-content: center;
         flex-direction: column;
         align-items: center;
         text-align: center;
         padding-left: 8px;
         span{
-                color: ${cores.vermelho};
+                color: ${cores.branco};
             }
         h1{
             font-size: 24px;
             margin-bottom: 8px;
             padding-bottom: 16px;
-            border-bottom: 1px solid ${cores.branco};
-
+            border-bottom: 2px solid ${cores.branco};
+            /* font-weight: 400; */
+            letter-spacing: 1px;
             i{
                 font-size: 22px;
-                color: ${cores.vermelho};
                 margin-left: 8px;
             }
         }
@@ -41,7 +40,7 @@ export const StyleHistoria = styled.div`
 
     .border-image{
         border: solid 1px ${cores.branco};
-        padding: 16px;
+        padding: 8px;
         margin: 16px 0;
         border-radius: 8px;
         .imagem{
