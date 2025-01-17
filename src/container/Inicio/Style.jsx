@@ -34,13 +34,13 @@ export const TextContainer = styled.div`
             opacity: ${({ isVisible }) => (isVisible ? 1 : 0)};
             height: 100px; /* Altura fixa para o espaço ser preservado */
             animation: ${fadeIn} 1s 3s forwards; /* Exibe a div após a animação do título */
-            padding: 16px 0 8px; /* Espaço entre o título e a div */
+            padding: 14px 0 8px;
             border-bottom: 1px solid white;
 
             p{
-                font-family: "Courier New", Courier, monospace;
                 font-size: 16px;
                 letter-spacing: 1px;
+                font-weight: 300;
                 .red{
                     font-weight: 900;
                 }
@@ -77,10 +77,18 @@ export const StyleInicio = styled.div`
         }
     }
     .border-imagem{
-        /* margin-top: 56px; */
-        border: 1px solid ${cores.branco};
+        /* border: 1px solid ${cores.branco};
         border-radius: 50%;
-        padding: 8px;
+        padding: 8px; */
+
+        display: inline-block;
+         /* Controle o tamanho da borda */
+        border-radius: 50%; /* Mantém o contorno arredondado */
+        background: radial-gradient(circle, rgba(214, 48, 49, 0.6), rgba(214, 48, 49, 0.2), transparent);
+        box-shadow: 0 0 20px rgba(214, 48, 49, 0.7), 
+            0 0 40px rgba(214, 48, 49, 0.5), 
+            0 0 60px rgba(214, 48, 49, 0.3);
+
         .imagem{
             width: 300px; /* Largura e altura iguais para criar o círculo */
             height: 300px;
@@ -100,8 +108,9 @@ export const StyleInicio = styled.div`
         /* margin-top: 56px; */
         display: inline-block;
         animation: ${bounce} 1.5s infinite ease-in-out;
-        color: ${cores.branco};
+        /* color: ${cores.branco}; */
         font-size: 24px;
+        text-shadow: 0 2px 4px rgba(223, 230, 233, 0.8)
     }
     
 
