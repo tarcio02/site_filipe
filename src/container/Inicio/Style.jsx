@@ -53,7 +53,7 @@ export const StyleInicio = styled.div`
         justify-content: space-around;
         flex-direction: column;
         align-items: center;
-        height: 100vh;
+        height: 90vh;
         padding: 16px;
         border-bottom: 1px solid ${cores.branco};
         position: relative;

@@ -8,6 +8,7 @@ function Patrocinio() {
     return(
         <StylePatrocinio>
             <h1>Por que Patricinar um <span>atleta?</span></h1>
+            <div className="container">
             <div className="card">
                 <img src={money} alt="Mulher efetuando um pagamento"/>
                 <p>
@@ -21,6 +22,7 @@ function Patrocinio() {
                     seja representado por um, pois com alta visibilidade das redes socias 
                     sua marca será divulgada no mercado.
                 </p>
+            </div>
             </div>
         </StylePatrocinio>
     )
