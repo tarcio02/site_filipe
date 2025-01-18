@@ -1,30 +1,51 @@
 import styled from "styled-components";
 import { cores } from "../../styles/GlobalStyle";
 
+export const Card = styled.div`
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    gap: 4px;
+    border-radius: 8px;
+    padding: 8px;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-weight: 200;
+    margin-bottom: 16px;
+
+    .imagem{
+        align-items: center;
+        img{
+            width: 120px;
+        }
+    }
+    .center{
+        text-align: center;
+    }
+`
+
 export const StyleHistoria = styled.div`
     .container{
-        height: 95vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
         padding: 16px;
         position: relative;
         z-index: 2;
         width: 100%;
+        border-bottom: 1px solid ${cores.branco};
     }
 
     .texto{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
-        padding-left: 8px;
+        text-align:center;
         span{
                 color: ${cores.branco};
             }
         h1{
             font-size: 24px;
-            margin-bottom: 8px;
+            margin-bottom: 32px;
             padding-bottom: 16px;
             border-bottom: 2px solid ${cores.branco};
-            /* font-weight: 400; */
             letter-spacing: 1px;
             i{
                 font-size: 22px;
@@ -39,17 +60,18 @@ export const StyleHistoria = styled.div`
     }
 
     .border-image{
-        border: solid 1px ${cores.branco};
+        border: solid 2px ${cores.branco};
         padding: 8px;
         margin: 16px 0;
         border-radius: 8px;
+        
+
         .imagem{
-            width: 300px; /* Largura e altura iguais para criar o círculo */
-            height: 300px;
-            overflow: hidden; /* Garante que a imagem não ultrapasse o contêiner */
+            overflow: hidden;
             border-radius: 8px;
+            
             img{
-                width: 330px;
+                width: 350px;
                 height: 330px;
                 object-fit: cover;
                 object-position: bottom;

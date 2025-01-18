@@ -2,6 +2,7 @@
 import { GlobalStyle } from "./styles/GlobalStyle";
 import Inicio from "./container/Inicio/Index/"
 import Historia from "./container/Historia/Historia"
+import Patrocinio from "./container/Patrocinio/Index";
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
       <GlobalStyle />
       <Inicio />
       <Historia />
+      <Patrocinio />
     </>
   );
 }
