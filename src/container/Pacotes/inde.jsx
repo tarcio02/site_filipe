@@ -2,7 +2,7 @@ import { StylePacotes } from "./Styles";
 import { useState } from "react";
 import Modal from "../../components/Modal/Index";
 import ModalBasico from "../../components/ModalBasico";
-import ModalRegular from "../../components/ModalRegular/Index";
+import ModalRegular from "../../components/ModalRegular";
 import ModalPremium from "../../components/ModalPremium";
 
 function Pacotes(){
