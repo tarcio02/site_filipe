@@ -22,6 +22,8 @@ export const StylePremium = styled.div`
     justify-content: space-between;
     align-items: center;
     letter-spacing: 1px;
+    position: relative;
+    z-index: 3;
 
     .head{
         i{

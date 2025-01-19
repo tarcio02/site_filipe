@@ -69,8 +69,10 @@ export const StylePacotes = styled.div`
         button{
             display: inline-block;
             animation: ${shakeAnimation} 2.6s ease-in-out infinite;
+            border-radius: 16px;
             background-color: transparent;
-            border: none;
+            border: 1px solid ${cores.branco};
+            padding: 8px;
             i{
                 margin-left: 8px;
             }

@@ -9,9 +9,18 @@ const FAQ = () => {
         };
     
         const faqItems = [
-        { question: 'Como patrocinar?', answer: 'React é uma biblioteca JavaScript para construir interfaces de usuário.' },
-        { question: 'Qual o tempo que minha marca será divulgada?', answer: 'Styled Components é uma biblioteca para estilização com CSS-in-JS em React.' },
-        { question: 'quais as formas de pagamento?', answer: 'Você clica em uma pergunta e a resposta é exibida abaixo.' },
+        { 
+            question: 'Como patrocinar?',
+            answer: 'Entre em contato comigo pelo meu whatsapp, e iremos ver qual o pacote mais se encaixa a sua necessidade.' 
+        },
+        { 
+            question: 'Por quanto tempo minha marca será divulgada?',
+            answer: 'você pode fechar patrocínio por quanto tempo desejar, seja um mês ou um ano (valores podem mudar ao decorrer do tempo).'
+        },
+        { 
+            question: 'Quais as formas de pagamento?', 
+            answer: 'Aceito pix, cartão, espécie ou produtos necessários para minha preparção.' 
+        },
         ];
     
         return (

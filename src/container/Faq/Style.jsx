@@ -3,9 +3,12 @@ import { cores } from "../../styles/GlobalStyle"
 
 export const Titulo = styled.h1`
     text-align: center;
-    padding: 16px;
     border-bottom:2px solid ${cores.branco};
+    padding-bottom: 16px;
     margin-bottom: 32px;
+    font-size: 24px;
+    letter-spacing: 1px;
+    
 
     i{
         margin-left: 8px;
@@ -26,7 +29,7 @@ export const FAQContainer = styled.div`
 export const Question = styled.div`
     background: ${cores.vermelho};
     padding: 15px 20px;
-    margin-bottom: 10px;
+    margin-bottom: 24px;
     border-radius: 8px;
     cursor: pointer;
     display: flex;
