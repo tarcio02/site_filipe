@@ -2,7 +2,7 @@ import { StylePacotes } from "./Styles";
 import { useState } from "react";
 import Modal from "../../components/Modal/Index";
 import ModalBasico from "../../components/ModalBasico";
-import ModalRegular from "../../components/ModalRegular";
+// import ModalRegular from "../../components/ModalRegular/Index";
 import ModalPremium from "../../components/ModalPremium";
 
 function Pacotes(){
@@ -48,7 +48,7 @@ function Pacotes(){
                     sua marca aparece de forma mais destacada, em relação 
                     ao pacote básico.
                 </p>
-                <button  onClick={() => openModalWithContent(<ModalRegular />)}>Saiba mais<i className="fa-solid fa-arrow-up-right-from-square"></i></button>
+                <button  onClick={() => openModalWithContent(<ModalBasico />)}>Saiba mais<i className="fa-solid fa-arrow-up-right-from-square"></i></button>
             </div>
             <div className="card">
                 <div className="head">
